@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    # containers
+    "blogrb-c-api", "blogrb-c-site", "blogrb-c-gen", "blogrb-c-server", "blogrb-c-orb",
+    # misc tooling/libraries
+    "blogrb", "blogrb-core",
+]
+resolver = "2"
