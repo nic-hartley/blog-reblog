@@ -28,7 +28,7 @@ Eventually it'll be hosted online, but it'll have to be made first.
 This repo contains the source code for the blog/reblog software.
 It's written in Rust and deployed with Helm to a Kubernetes cluster.
 Because each of the crates are tightly tied together, they're all pinned to the same versions, and you'll need to make sure versions line up.
-This repo is broken into several crates, each with its own README for details:
+This repo is broken into several parts, each with its own README for details:
 
 - `blogrb-core`:
   The primary b/rb library, which implements most of the common code for the rest of the crates.
@@ -39,7 +39,8 @@ This repo is broken into several crates, each with its own README for details:
 - `blogrb`:
   A CLI tool to generate a site from a repo, a lot like b/rb's VCS integration.
   (The social features might work a bit differently -- check the docs for details.)
-
-It also has the relevant Kubernetes files to deploy the site to a Kubernetes cluster in `k8s`.
-The IaC for caching is in `cache`.
-Both also have READMEs explaining how to deploy them.
+- `allocate`:
+  IaC to start up and manage the Kubernetes cluster, handle DNS mappings, etc. on Linode.
+  This is only directly useful if you're also using Linode in the same way b/rb does.
+- `k8s`:
+  Everything needed to build the containers and deploy them to a given Kubernetes cluster.
