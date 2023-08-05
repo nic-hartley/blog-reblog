@@ -12,12 +12,13 @@ blog/reblog's CMS half is robust, with:
 - Built-in and automatic RSS, Atom, OpenGraph, etc.
 - Integration with Git and other VCS
 - Archivability and portability, by being based on open, text-based standards
+- Customizable styles, URL hierarchies, and page layouts
 
 It also cherrypicks a few social features from similar platforms, like:
 
+- An advanced RSS reader for all the blogs you follow, on or off the site
 - User-submitted questions, aka asks, both directly to you and about specific posts
 - Reblogging other posts, just to share or adding your own thoughts
-- A central-ish feed of all the blogs you follow, prioritized how you want it
 
 Currently, it doesn't really exist.
 Eventually it'll be hosted online, but it'll have to be made first.
