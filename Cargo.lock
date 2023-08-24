@@ -3,17 +3,33 @@
 version = 3
 
 [[package]]
+name = "allocate"
+version = "0.1.0"
+
+[[package]]
+name = "api"
+version = "0.1.0"
+
+[[package]]
 name = "blogrb"
 version = "0.1.0"
 
 [[package]]
-name = "blogrb-api"
-version = "0.1.0"
-
-[[package]]
-name = "blogrb-build"
-version = "0.1.0"
-
-[[package]]
 name = "blogrb-core"
+version = "0.1.0"
+
+[[package]]
+name = "gen"
+version = "0.1.0"
+
+[[package]]
+name = "orb"
+version = "0.1.0"
+
+[[package]]
+name = "server"
+version = "0.1.0"
+
+[[package]]
+name = "site"
 version = "0.1.0"

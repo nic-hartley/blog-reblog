@@ -1,8 +1,8 @@
 [workspace]
 members = [
     # containers
-    "blogrb-c-api", "blogrb-c-site", "blogrb-c-gen", "blogrb-c-server", "blogrb-c-orb",
+    "containers/api", "containers/site", "containers/gen", "containers/server", "containers/orb",
     # misc tooling/libraries
-    "blogrb", "blogrb-core",
+    "blogrb", "blogrb-core", "allocate",
 ]
 resolver = "2"
