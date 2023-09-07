@@ -1,8 +1,0 @@
-[workspace]
-members = [
-    # containers
-    "containers/api", "containers/site", "containers/gen", "containers/server", "containers/orb",
-    # misc tooling/libraries
-    "blogrb", "blogrb-core", "allocate",
-]
-resolver = "2"
