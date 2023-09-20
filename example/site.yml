@@ -1,0 +1,16 @@
+# If you're on blog-reblog.net (or any other hosted version) this is set by
+# your host and can't be overridden.
+hosted-at: redfennec.dev/
+posts:
+  # posts should be at /posts/{index}-{stub} and /p/{index}
+  urls:
+  - /posts/{year}/{index.year}-{stub}
+  - /p/{index}
+# This site mostly uses the defaults, but many things can be customized:
+# assets:
+#   in: static/
+#   protocol: s
+#   base-path: /s/
+# styles:
+#   all: asset:styles/main.css
+#   post: asset:styles/per-post.css
