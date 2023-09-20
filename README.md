@@ -56,19 +56,20 @@ That said, [the releases](https://github.com/nic-hartley/blog-reblog/releases) s
 ## Versioning
 
 As is tradition in Haskell spaces, this project uses [PVP](https://pvp.haskell.org/).
-Specifically, it uses a four-part version number, `gen.break.add.fix`:
+Specifically, it uses a four-part version number, `gen.break.add.fix`, with guarantees about the **source code** compatibility:
 
 - `gen` indicates the "generation" of the package.
   When large, sweeping, structural changes are made that affect what it's like to use the package, this version updates and all others reset.
   Notably, the gen of all the packages will be in sync in any particular commit.
 - `break` is incremented when there's a breaking change, but it's not a large one.
   For example, `2.0.0.0` might introduce a brand-new API, but leave the old one available under `V1` to allow incremental porting.
-  `2.1.0.0` could delete `V1`.
-- `add` increases when things are added or changed, in a way that won't break source-compatibility.
-  Generally replacements of under-the-hood parts will increase this, too, even if the interface is identical.
-- `fix` increases when basically any small, internal change is made, i.e. bugfixes, documentation tweaks, etc.
+  `2.1.0.0` might delete `V1`.
+- `add` increases when things are added or changed, in a way that won't break **source**-compatibility.
+  For example, adding a field to a record type whose constructor isn't accessible would fit here.
+- `fix` increases when basically any small, internal change is made, e.g. bugfixes, documentation tweaks, performance boosts.
+  Notably, when something entirely under-the-hood is replaced, this is probably what increases, even if it's a major internal change.
 
-Do note that all of these promises apply to *documented* behavior.
+All of these promises apply to *documented* behavior of the code's external API.
 If I accidentally make a type accessible, it might disappear at any time when I realize what I've done.
-There will also occasionally be bits in the documentation explaining under-the-hood behavior that's explicitly labelled with "under the hood" or similar.
-Despite literally being documented, these behaviors are treated as though they aren't, because the "under the hood" explanations are just to help you build a mental model.
+Or I might entirely refactor and rename and restructure all of the code inside a binary without changing its CLI.
+I also give myself more leeway for changes that affect security; even if they break source compatibility they might be done in a sub-major version to encourage upgrades.
