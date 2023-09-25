@@ -7,13 +7,37 @@ name = "blogrb"
 version = "0.1.0"
 
 [[package]]
-name = "blogrb-api"
-version = "0.1.0"
-
-[[package]]
-name = "blogrb-build"
-version = "0.1.0"
-
-[[package]]
 name = "blogrb-core"
+version = "0.1.0"
+
+[[package]]
+name = "brbnet-api"
+version = "0.1.0"
+
+[[package]]
+name = "brbnet-build"
+version = "0.1.0"
+
+[[package]]
+name = "brbnet-client"
+version = "0.1.0"
+
+[[package]]
+name = "brbnet-core"
+version = "0.1.0"
+
+[[package]]
+name = "brbnet-cron"
+version = "0.1.0"
+
+[[package]]
+name = "brbnet-feed"
+version = "0.1.0"
+
+[[package]]
+name = "brbnet-orb"
+version = "0.1.0"
+
+[[package]]
+name = "brbnet-serve"
 version = "0.1.0"

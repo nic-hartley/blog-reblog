@@ -1,8 +1,10 @@
 [workspace]
 members = [
+    # the CLI tool
+    "blogrb",
+    # libraries
+    "blogrb-core", "brbnet-core", "brbnet-client",
     # containers
-    "blogrb-c-api", "blogrb-c-site", "blogrb-c-gen", "blogrb-c-server", "blogrb-c-orb",
-    # misc tooling/libraries
-    "blogrb", "blogrb-core",
+    "brbnet-api", "brbnet-build", "brbnet-cron", "brbnet-feed", "brbnet-serve", "brbnet-orb",
 ]
 resolver = "2"
